@@ -1,0 +1,56 @@
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+.main-menu{ 
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    color: white;
+    font-size: 14pt;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.main-menu:hover {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    color: #0B9DFE;
+}
+
+.social{
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    background: url("images/facebook.png") no-repeat;
+    color: white;
+    font-size: 1.5em;
+    display: block;
+}
+
+.social:hover{
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    color: #0B9DFE;
+}
+
+height-fix{
+    min-height: 5em!important;
+    max-height: 5em!important;
+}
+
+.menu{
+    background-image: linear-gradient(rgba(22,19,22, 0.7),rgba(22,19,22, 0));
+}
