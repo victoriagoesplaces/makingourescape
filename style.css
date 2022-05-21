@@ -58,7 +58,6 @@ html, body {
 }
 body {
     background-color: #050404;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
