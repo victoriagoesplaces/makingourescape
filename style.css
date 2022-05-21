@@ -1,7 +1,4 @@
-body {
-    background-image: url(images/background.jpg);
-    background-size: cover;
-}
+
 
 hr.solid {
     border-top: 3px solid #bbb;
@@ -60,7 +57,7 @@ html, body {
     height: 100%;
 }
 body {
-    background-color: #f0f0f0;
+    background-color: #050404;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,9 +73,9 @@ body {
 .map-container .point {
     cursor: pointer;
     position: absolute;
-    width: 1.6rem;
-    height: 1.6rem;
-    background-color: #00acc1;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: #0B9DFE;
     border-radius: 50%;
     transition: all 0.3s ease;
     will-change: transform, box-shadow;
@@ -91,11 +88,11 @@ body {
     transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-/* .map-container .venezuela {
-    top: 54%;
-    left: 24%;
+.map-container .namibia {
+    top: 70%;
+    left: 50%;
 }
-.map-container .brasil {
+/* .map-container .brasil {
     top: 64%;
     left: 28%;
 }
@@ -112,11 +109,11 @@ body {
     left: 18%;
 }
 .map-container .mexico {
-    top: 38%;
+    top: 42%;
     left: 12%;
 }
 .map-container .usa {
-    top: 26%;
+    top: 35%;
     left: 17%;
 }
 .map-container .iceland {
