@@ -1,0 +1,510 @@
+/* 1. Base */
+
+html {
+  background-color: #151425;
+  background-image: none;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: currentColor;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* 2. Shared */
+
+.wallpaper,
+.picture-shadow,
+.picture-image {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.job,
+.button {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.button,
+.social a {
+  transform-origin: center;
+  transition-duration: 100ms;
+}
+
+/* 3. Specific */
+
+.wallpaper {
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  position: fixed;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+}
+
+.side {
+  max-height: 20rem;
+  max-width: 20rem;
+}
+
+.picture {
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.picture-shadow {
+  border-radius: 290486px;
+  background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+  position: absolute;
+  top: 10%;
+}
+
+.picture-image {
+  border-radius: 290486px;
+  position: absolute;
+}
+
+.about {
+  max-width: 26rem;
+}
+
+.name {
+  font-size: 2.25rem;
+  line-height: 1.125;
+  margin-bottom: 0.5rem;
+}
+
+.job {
+  color:#63b0f8;
+  font-size: 0.85rem;
+}
+
+.hr {
+  border: none;
+  content: "";
+  height: 1px;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  transform-origin: center left;
+  width: 4rem;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.contact {
+  display: inline-block;
+  margin-bottom: 0;
+  /* margin-top: 1.5rem; */
+  vertical-align: top;
+} 
+
+.button {
+  background-color: #fff;
+  border-radius: 290486px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 1.25em 2em;
+  text-shadow: none;
+  transition-property: box-shadow, transform;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+}
+
+.button:hover {
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.02) translateY(-4px);
+}
+
+.button:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transform: scale(0.98) translateY(-2px);
+}
+
+.social {
+  display: flex;
+}
+
+.social li {
+  height: 2rem;
+  margin-right: 0rem;
+  text-align: center;
+  width: 2rem;
+}
+
+.social a {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  height: 2rem;
+  justify-content: center;
+  opacity: 0.5;
+  transition-property: opacity, transform;
+  width: 2rem;
+  will-change: opacity, transform;
+}
+
+.socialTwo a {
+  font-size: 1.5rem;
+  height: 2rem;
+  opacity: 0.5;
+  transition-property: opacity, transform;
+  width: 2rem;
+  will-change: opacity, transform;
+
+}
+
+.social a:hover {
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+.social a:active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.socialTwo {
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* 4. Responsiveness */
+
+@media screen and (max-width: 799px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5rem 3rem; */
+  }
+
+  .side {
+    margin-bottom: 3rem;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 14rem;
+    width: 14rem;
+  }
+
+  .social {
+    text-align: center;
+    /* position: relative; */
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    /* padding: 4rem; */
+  }
+
+  .side {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20rem;
+    margin-left: 4rem;
+    order: 2;
+    width: 20rem;
+  }
+
+  .about {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+
+
+
+
+/* Portfolio Section (images)  */
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 470px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	height: auto;
+	background: #0f1213;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 100;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* portfolio effects */
+
+figure.effect-jazz {
+  background:  rgb(5, 5, 5);
+}
+
+figure.effect-jazz img {
+	opacity: 0.9;
+}
+
+figure.effect-jazz figcaption::after,
+figure.effect-jazz img,
+figure.effect-jazz p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-jazz figcaption::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+	transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+figure.effect-jazz h2,
+figure.effect-jazz p {
+	opacity: 1;
+	-webkit-transform: scale3d(0.8,0.8,1);
+	transform: scale3d(0.8,0.8,1);
+}
+
+figure.effect-jazz h2 {
+	padding-top: 9%;
+	-webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    font-size: 1.9rem;
+}
+
+figure.effect-jazz p {
+  position: absolute;
+	padding: 0.5em 2em;
+	text-transform: none;
+	font-size: 0.85em;
+  opacity: 0;
+  z-index: 2000;
+}
+
+figure.effect-jazz:hover img {
+	opacity: 0.35;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-jazz:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+	transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+}
+
+figure.effect-jazz:hover h2,
+figure.effect-jazz:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+
+/* Media queries */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  }
+
+  .content {
+    padding: 0 10px;
+    /* text-align: center; */
+  }
+  .container:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+
+  ul{
+    padding-left: 32.5%;
+  }
+
+@media screen and (min-width: 800px) {
+
+  .content {
+        padding: 0 10px;
+        text-align: center;
+    }
+    .grid figure {
+        display: inline-block;
+        float: none;
+        margin: 10px auto;
+        width: 100%;
+    }
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 799px) {
+.content {
+  padding: 0;
+  text-align: center;
+  margin: 5%;
+}
+.grid figure {
+  float: none;
+  width: 100%;
+  min-width: 340px;
+  max-width: 360px;
+  max-height: 340px;
+}
+figure.effect-jazz h2 {
+	padding-top: 4%;
+	-webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    font-size: 1.5rem;
+}
+
+figure.effect-jazz p {
+  font-size: 0.68em;
+}
+
+}
+
+
+@media (min-width: 600px) {
+.container {
+  width: 60%;
+  padding: 0;
+}
+.grid figure {
+  float: none;
+  width: 100%;
+  min-width: 300px;
+  max-width: 450px;
+  max-height: 360px;
+}
+
+
+figure.effect-jazz p {
+    font-size: 0.72em;
+  }
+
+figure.effect-jazz h2 {
+  padding-top: 5%;
+  -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    font-size: 1.9rem;
+  }
+
+#about {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  }
+}
+
+.footer {
+  text-align: center;
+}
