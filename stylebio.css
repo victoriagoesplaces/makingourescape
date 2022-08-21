@@ -38,6 +38,9 @@ hr.solid {
     display: block;
 }
 
+.vero{
+    max-height: 2.5em;
+}
 .social:hover{
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
